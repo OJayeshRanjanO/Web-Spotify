@@ -1,0 +1,78 @@
+#userSettings{
+    position: relative;
+    height: calc(100% - 150px);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#userContainerOuterWrapper{
+    position: relative;
+    width: 100%;
+    background-color: #a5a5a5;
+    height: 100%;
+    
+}
+
+.userContainer{
+    width: calc((100%) - 24px);
+/*    height: 300px;*/
+    float: left;
+    margin-left: 12px;
+    margin-top: 16px;
+    background-color: white;
+    border-radius: 10px;
+/*    box-shadow: 0px 0px 20px black;*/
+}
+
+.userContentHeader{
+    text-align: center;
+    height: 30px;
+    padding-top: 5px;
+    border-bottom: 1px solid red;
+    
+}
+
+.userContentList{
+    position: relative;
+    padding: 10px;
+}
+
+.userContentElementList{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.userContentElementType{
+    color:grey;
+/*    padding-bottom: 5px;*/
+    width: 200px;
+    float:left;
+}
+
+.userContentElementContent{
+    width: calc(100% - 200px);
+    float:right;
+    text-align: right;
+    height: 20px;
+}
+
+.profilePageIcon{
+    padding-left: 10px;
+}
+
+.profilePageIcon:hover{
+    color:red;
+    cursor: pointer;
+}
+
+.userTheme{
+    position: relative;
+    width: 100px;
+    height: 4px;
+    top:15px;
+    left:250px;
+    border: 2px solid red;
+}

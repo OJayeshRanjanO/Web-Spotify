@@ -1,0 +1,16 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, * {
+    padding: 0;
+    margin: 0;
+/*    overflow-y: scroll;*/
+}
+html {
+    width: 825px;
+    height: 100%;
+/*    opacity: 0.5;*/
+}

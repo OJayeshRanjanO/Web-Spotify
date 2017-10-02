@@ -1,0 +1,103 @@
+#leftWrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #383333;
+}
+
+#userInfoWrapper{
+    position: relative;
+/*    border: 2px solid green;*/
+    background-color: #473f3f;
+    width: 100%;
+    height: 100px;
+}
+
+#userInfoInnerWrapper{
+    position: relative;
+    width: 93%;
+    height: 50px;
+    top:50%;
+    transform: translateY(-50%);
+/*    left:7px;*/
+    
+}
+#profilePic{
+    position: relative;
+/*    border: 2px solid white;*/
+    width:50px;
+    height: 50px;
+    float:left;
+    left: 15px;
+    background-image: url(../../images/profilepic.jpg);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+#userInfo{
+    position: relative;
+    float:right;
+/*    border: 2px solid white;*/
+    width: 170px;
+    height: 50px;
+    margin-left: 20px;
+    color:white;
+    padding-top: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+#username{
+    position: relative;
+    width: 170px;
+    text-align: right;
+}
+#usertype{
+    position: relative;
+    width: 170px;
+    text-align: right;
+    font-size: 14px;
+}
+
+
+#userSongWrapper{
+    position: relative;
+/*    border: 2px solid white;*/
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    height: 525px;
+    font-size: 14px;
+    top:20px;
+    left:50%;
+    transform: translateX(-50%);
+/*    overflow-y: scroll;*/
+}
+ul{
+    margin-top: 10px;
+}
+.userSongWrapperList{
+    height: 40px;
+    list-style: none;
+        transition-duration: 0.5s;
+}
+.userSongWrapperList:hover{
+    background-color: #514f4f;
+    cursor: pointer;
+    color:red;
+}
+.userSongWrapperItem{
+    position: relative;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.userSongWrapperHeader{
+    position: relative;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Work Sans', sans-serif;
+        list-style: none;
+
+    
+}

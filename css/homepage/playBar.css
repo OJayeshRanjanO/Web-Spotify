@@ -1,0 +1,122 @@
+#playBarLeft{
+    position: relative;
+    width: 25%;
+/*    border: 2px solid yellow;*/
+    height: 100%;
+    float: left;
+}
+
+#playBarImage{
+    position: relative;
+    float:left;
+    width: 75px;
+    height: 75px;
+    background-size: 75px 75px;
+    background-repeat: no-repeat;
+}
+
+#playBarLeftAddSong{
+    position: relative;
+    float:right;
+    width: 60%;
+    height: 35px;
+    
+}
+
+#albumName{
+    position: relative;
+    float:right;
+    text-align: right;
+    right: 5px;
+    width: 60%;
+    color:white;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#artistName{
+        position: relative;
+    float:right;
+    text-align: right;
+    right: 5px;
+    width: 60%;
+    font-size: 14px;
+    top: 4px;
+    color:grey;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+#playBarLeftAddSongWrapper{
+    position: relative;
+    float:right;
+    width: 35px;
+    height: 35px;
+}
+
+#playBarCenter{
+    position: relative;
+    width: 50%;
+/*
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+*/
+    height: 100%;
+    float:left;
+    
+}
+
+#progressBar{
+    position: relative;
+    width: 80%;
+    bottom: 5px;
+    left:50%;
+    top:5px;
+    transform: translateX(-50%);
+}
+#playBarFunctionality{
+    width: 290px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top:10px;
+}
+
+.playBarFunctionalityButton{
+    margin-left: 20px;
+}
+
+#progressBarWrapper{
+    
+}
+
+#playBarRight{
+    position: relative;
+    width: 25%;
+/*    border: 2px solid violet;*/
+    height: 100%;
+    float:left;
+    
+}
+
+#volumeBar{
+    width: 100px;
+}
+
+#volumeController{
+    position: relative;
+    width: 185px;
+    top:25px;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+
+.icons{
+    color:white;
+    transition-duration: 0.5s;
+}
+
+.icons:hover{
+    color:red;
+    cursor: pointer;
+}

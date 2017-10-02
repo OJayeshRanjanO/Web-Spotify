@@ -1,0 +1,127 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, * {
+    padding: 0;
+    margin: 0;
+/*    overflow-y: scroll;*/
+}
+html {
+    width: 825px;
+    height: 100%;
+/*    opacity: 0.5;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#loginPageCenter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+/*    border: 2px solid blue;*/
+    background-color: #1c1c1c;
+/*    background-color: #383333;*/
+    background-image: url(../../images/loginScreen.jpg)
+}
+
+#loginPageWrapper{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border: 2px solid red;
+    top:25%;
+    left:50%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#loginSpace{
+    position: relative;
+    top:50%;
+/*    border: 2px solid red;*/
+    width: 350px;
+    height: 130px;
+    transform: translateX(-50%);
+    left:50%;
+}
+
+.usernamePassword{
+    margin-top: 10px;
+    height: 30px;
+    width: 350px;
+    border: 1px solid red;
+    background-color: #383333;
+    border-radius: 10px;
+    color:white;
+    padding-left: 5px;
+
+}
+
+#loginButton{
+    position: relative;
+    margin-top: 10px;
+    width:75px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 25px;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+#loginButton:hover{
+    cursor: pointer;
+    background-color: white;
+    color:black;
+    
+}
+
+.usernamePassword:hover{
+        background-color: white;
+        color:#4f4d4d;
+    
+}
+
+#accountSpace{
+    position: relative;
+    color:white;
+    width: 350px;
+    text-align: center;
+    left:50%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+
+.loginExtras{
+    margin-top: 10px;
+    transition-duration: 0.5s;
+}
+
+.loginExtras:hover{
+    color:red;
+    cursor: pointer;
+}
+
+/*
+#loginScreenLogo{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+}
+*/
+
+@media only screen and (min-width: 825px) {
+    html{
+        width: 100vw;
+    }
+    
+}
