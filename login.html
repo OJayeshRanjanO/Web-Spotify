@@ -3,6 +3,11 @@
         <title></title>
           <link rel="stylesheet" href="./css/login/bodyStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
+                    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui-1.8.21.custom.min.js"></script>
+                        <script src="temp.js"></script>
+
     </head>
     <body>
         <div id="loginPageCenter">
@@ -13,10 +18,10 @@
                       <input class="usernamePassword" type="text" name="username" placeholder="Username or email"><br>
                       <input class="usernamePassword" type="password" name="lastname" placeholder="Password">
                     </form>
-                    <button id='loginButton'>Login</button>
+                    <button id='loginButton' onclick='loginUser()'>Login</button>
                 </div>
                 <div id=accountSpace>
-                    <div class="loginExtras">Sign up</div>
+                    <div class="loginExtras" onclick='signUp()'>Sign up</div>
                     <div class="loginExtras">Reset Password</div>
                 </div>
             </div>

@@ -58,6 +58,21 @@
     font-size: 14px;
 }
 
+#useredit{
+    position: relative;
+    width: 170px;
+    text-align: right;
+    font-size: 14px;
+        transition-duration: 0.5s;
+    
+}
+
+#useredit:hover{
+    cursor: pointer;
+    color:red;
+    
+}
+
 
 #userSongWrapper{
     position: relative;
