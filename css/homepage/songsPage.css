@@ -1,0 +1,51 @@
+#SongsPlayButton{
+    top:15px;
+    left:10px;
+    background-color: darkred;
+}
+
+#SongsPlayButton:hover{
+    background-color: black;
+}
+
+#SongsPageTop{
+    height: 125px;
+    border-bottom: 1px solid silver;
+}
+
+#SongsPageBottom{
+    height: auto;
+    
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    font-size: 12px;
+/*    width: 100%;*/
+}
+th{
+       width: 200px;
+    height: 50px;
+    text-align: left;
+    padding: 8px;
+       overflow: hidden;
+   white-space: nowrap;
+    word-wrap: break-word; 
+}
+td {
+/*    border: 1px solid #dddddd;*/
+    width: 200px;
+    height: 30px;
+    text-align: left;
+    padding: 8px;
+       overflow: hidden;
+   white-space: nowrap;
+    word-wrap: break-word;
+    animation-duration: 1s;
+}
+
+#songPageListContent:hover{
+    background-color:grey;
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+#RecentlyPlayedPageTop{
+    height: 125px;
+    border-bottom: 1px solid silver;
+}    
+
+.RecentlyPlayedPageContent{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 7.5px;
+    margin-top: 20px;
+        float: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.RecentlyPlayedContentPicture{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+    border: 2px solid silver;
+
+}
+
+.RecentlyPlayedContentDescription{
+    position: relative;
+    height: 50px;
+    padding-top: 5px;
+/*    padding-left: 10px;*/
+    font-variant: small-caps;
+    font-size: 14px;
+}
+.RecentlyPlayedContentName{
+/*    margin-top:5px;*/
+    
+}
+.RecentlyPlayedContentArtist{
+    margin-top:2px;
+    color:grey;
+}

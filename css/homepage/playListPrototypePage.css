@@ -1,0 +1,61 @@
+#PlayListPrototypeButton{
+    top:15px;
+    left:10px;
+    background-color: darkred;
+}
+
+#PlayListPrototypeButton:hover{
+    background-color: black;
+}
+
+#PlayListPrototypeTop{
+    height: 125px;
+    border-bottom: 1px solid silver;
+}
+
+#PlayListPrototypeBottom{
+    height: auto;
+    
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    font-size: 12px;
+/*    width: 100%;*/
+}
+th{
+    width: 200px;
+    height: 50px;
+    text-align: left;
+    padding: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word; 
+}
+td {
+/*    border: 1px solid #dddddd;*/
+    width: 200px;
+    height: 30px;
+    text-align: left;
+    padding: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    animation-duration: 1s;
+}
+
+#PlayListPrototypeSongListContent:hover{
+    background-color:grey;
+    cursor: pointer;
+}
+
+#playListPrototypeImage{
+    position: relative;
+    float:left;
+    width: 150px;
+    height: 100%;
+    background-size: 150px 100%;
+    background-repeat: no-repeat;
+    
+}

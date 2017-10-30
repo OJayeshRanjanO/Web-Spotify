@@ -3,22 +3,38 @@
 <head>
 	<title>Jay Bird&#8482;</title>
   <link rel="stylesheet" href="./css/homepage/bodyStyle.css">
+  <link rel="stylesheet" href="./css/homepage/songsPage.css">
+  <link rel="stylesheet" href="./css/homepage/browsePage.css">
+  <link rel="stylesheet" href="./css/homepage/albumPage.css">
+  <link rel="stylesheet" href="./css/homepage/artistPage.css">
+  <link rel="stylesheet" href="./css/homepage/recentlyPlayedPage.css">
+  <link rel="stylesheet" href="./css/homepage/playListPrototypePage.css">
   <link rel="stylesheet" href="./css/homepage/playBar.css">
   <link rel="stylesheet" href="./css/homepage/left.css">
   <link rel="stylesheet" href="./css/homepage/center.css">
   <link rel="stylesheet" href="./css/homepage/right.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway | Asap | Work+Sans | Ubuntu | Oxygen | Archivo+Black | Rokkitt | Passion+One" rel="stylesheet">
+    
+    
+<!--  <link href="https://fonts.googleapis.com/css?family=Raleway | Asap | Work+Sans | Ubuntu | Oxygen | Archivo+Black | Rokkitt" rel="stylesheet">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
-        <script src="temp.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/songsPage.js"></script>
+    <script src="js/browsePage.js"></script>
+    <script src="js/albumPage.js"></script>
+    <script src="js/artistPage.js"></script>
+    <script src="js/recentlyPlayedPage.js"></script>
+    <script src="js/playListPrototypePage.js"></script>
+    <script src="js/main.js"></script>
+
     
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/jquery-ui-1.8.21.custom.min.js"></script>
 
 
 
     
 </head>
+<!--    onload='loadBrowseTabScreen()'-->
 <body>
     <div id="main">
         <div id=left>
@@ -35,27 +51,26 @@
                 </div>
                 <div id="userSongWrapper">
                     <ul>
-                        <li class=userSongWrapperList><div class='userSongWrapperItem'>Browse</div></li>
+                        <li class=userSongWrapperList id=BrowseScreenTab><div class='userSongWrapperItem' >Browse</div></li>
                         <li class=userSongWrapperList><div class='userSongWrapperItem'>Radio</div></li>
                         <li></li>
                         <li></li>
                         <li class=userSongWrapperHeader>YOUR LIBRARY</li>
-                        <li class=userSongWrapperList><div class='userSongWrapperItem'>Recently Played</div></li>
-                        <li class=userSongWrapperList><div class='userSongWrapperItem'>Songs</div></li>
-                        <li class=userSongWrapperList><div class='userSongWrapperItem'>Albums</div></li>
-                        <li class=userSongWrapperList><div class='userSongWrapperItem'>Artists</div></li>
-                        <li class=userSongWrapperList><div class='userSongWrapperItem'>Stations</div></li>
-                        <li class=userSongWrapperList><div class='userSongWrapperItem'>Local Files</div></li>
+                        <li class=userSongWrapperList id=RecentPlayTab><div class='userSongWrapperItem'>Recently Played</div></li>
+                        <li class=userSongWrapperList id=SongTab><div class='userSongWrapperItem' >Songs</div></li>
+                        <li class=userSongWrapperList id=AlbumTab><div class='userSongWrapperItem' >Albums</div></li>
+                        <li class=userSongWrapperList id=ArtistTab><div class='userSongWrapperItem' >Artists</div></li>
+                        <li class=userSongWrapperList id=StationTab><div class='userSongWrapperItem' >Stations</div></li>
+                        <li class=userSongWrapperList id=LocalFileTab><div class='userSongWrapperItem' >Local Files</div></li>
                         <li></li>
                         <li></li>
-                        <li class=userSongWrapperHeader>MY PLAYLISTS</li>
-                        <li class=userSongWrapperList><div class='userSongWrapperItem'>Liked from Radio</div></li>
-                        <li class=userSongWrapperList><div class='userSongWrapperItem'>My Play List</div></li>
+                        <li class=userSongWrapperHeader>PLAYLISTS</li>
+                        <li class=userSongWrapperList id=PlayList1><div class='userSongWrapperItem'>Playlist 1</div></li>
+                        <li class=userSongWrapperList id=PlayList2><div class='userSongWrapperItem'>Playlist 2</div></li>
+                        <li class=userSongWrapperList><div class='userSongWrapperItem'>Discover Weekly</div></li>
                     </ul>
                 </div>
-            
             </div>
-        
         </div>
         <div id="center">
             <div id=centerTopBar>
@@ -71,76 +86,62 @@
                 </div>
             </div>
             <div id="centerSideContent">
-                <div id=centerSideContentWrapper>
-                    <div id="contentTitle">
-                        <div id="contentTitleWrapper" style="border-bottom:transparent;">
-                            Sleep Well!
+<!--
+                <div class=centerSideContentWrapper id=PlayListPrototypeTop>
+                    <div id=playListPrototypeImage style="background-image: url(./images/FSProfile3.jpg);"></div>
+                    <div id=contentTitleOuterWrapper>
+                        <div id="contentTitle">
+                            <div id="contentTitleWrapper" style="border-bottom:transparent; font-size:45px;">Playlist 1</div>
                         </div>
-                    </div>
-                    <div class="contentObject">
-                        <div class="contentPicture" style="background-image: url('./images/albumCover1.jpg');"></div>
-                        <div class="contentName"><p>Sons of Plunder</p></div>
-                        <div class="contentDescription">
-                            <p>As the countless numbers hunger For worldwide renown All the pimping sons of plunder Will roll up their sleeves</p>
-                        </div>
-                        <div class="contentFollowers">
-                            <p>500,000 FOLLOWERS</p>
-                        </div>
-                    </div>
-                    <div class="contentObject">
-                        <div class="contentPicture" style="background-image: url('./images/albumCover2.jpg');"></div>
-                        <div class="contentName"><p>Hand of Blood</p></div>
-                        <div class="contentDescription">
-                            <p>Oh. There goes my Valentine again. I'm soaked in red for what she said. And now she's gone. Oh my God have I done it again</p>
-                        </div>
-                        <div class="contentFollowers">
-                            <p>1,000,000 FOLLOWERS</p>
-                        </div>
-                    </div>
-                    <div class="contentObject">
-                        <div class="contentPicture" style="background-image: url('./images/albumCover3.jpg');"></div>
-                        <div class="contentName"><p>Wrong Side of Heaven</p></div>
-                        <div class="contentDescription">
-                            <p>I spoke to God today and she said that she's ashamed What have I become. What have I done</p>
-                        </div>
-                        <div class="contentFollowers">
-                            <p>250,000 FOLLOWERS</p>
-                        </div>
+                        <button class='buttonStyle1' id=PlayListPrototypeButton onclick='loadPlayListPrototype()'>Play</button>
                     </div>
                 </div>
-                <div id=centerSideContentWrapper>
-                    <div id="contentTitle">
-                        <div id="contentTitleWrapper">
-                            Genre & Mood
-                        </div>
-                        <div class="GMContent">
-                            <div class=GMContentPicture style="background-image: url(./images/GMImage1.jpg);"></div>
-                            <div class=GMContentLabel><div class=GMContentLabelWrapper>Workout</div></div>
-                        </div>
-                        <div class="GMContent">
-                            <div class=GMContentPicture style="background-image: url(./images/GMImage2.jpg);"></div>
-                            <div class=GMContentLabel><div class=GMContentLabelWrapper>Metal</div></div>
-                        </div>
-                        <div class="GMContent">
-                            <div class=GMContentPicture style="background-image: url(./images/GMImage3.jpg);"></div>
-                            <div class=GMContentLabel><div class=GMContentLabelWrapper>Pop</div></div>
-                        </div>
-                        <div class="GMContent">
-                            <div class=GMContentPicture style="background-image: url(./images/GMImage4.jpg);"></div>
-                            <div class=GMContentLabel><div class=GMContentLabelWrapper>Rock</div></div>
-                        </div>
-                        <div class="GMContent">
-                            <div class=GMContentPicture style="background-image: url(./images/GMImage5.jpg);"></div>
-                            <div class=GMContentLabel><div class=GMContentLabelWrapper>Gaming</div></div>
-                        </div>
-                    </div>
+                <div class=centerSideContentWrapper id=PlayListPrototypeBottom>
+                    <table id=PlayListPrototypeTable>
+                        <tr>
+                            <th></th>
+                            <th>TITLE</th>
+                            <th>ARTIST</th>
+                            <th>ALBUM</th>
+                            <th>RELEASE</th>
+                            <th>DURATION</th>
+                        </tr>
+-->
+<!--
+                           <tr id=songPageListContent>
+                               <td><i class="material-icons">play_circle_outline</i><i class="material-icons SongPageAddSong">add</i></td>
+                                <td>Pray</td>
+                                <td>Sam Smith</td>
+                                <td>Pray</td>
+                                <td>2017-10-08</td>
+                                <td>3:42</td>
+                           </tr>
+                           <tr id=songPageListContent>
+                               <td><i class="material-icons">play_circle_outline</i><i class="material-icons SongPageAddSong">add</i></td>
+                                <td>Pray</td>
+                                <td>Sam Smith</td>
+                                <td>Pray</td>
+                                <td>2017-10-08</td>
+                                <td>3:42</td>
+                           </tr>
+                           <tr id=songPageListContent>
+                               <td><i class="material-icons">play_circle_outline</i><i class="material-icons SongPageAddSong">add</i></td>
+                                <td>Pray</td>
+                                <td>Sam Smith</td>
+                                <td>Pray</td>
+                                <td>2017-10-08</td>
+                                <td>3:42</td>
+                           </tr>
+-->
+<!--
+                    </table>
                 </div>
-                                    
+-->
             </div>
             <div id=right>
                 <div id=rightTopWrapper>
                     <p id="findFriendsText">See what your friends are playing</p>
-                    <button id="findFriends">Find Friends</button>
+                    <button class='buttonStyle1' id='findFriendsButton'>Find Friends</button>
                 </div>
                 <div id=rightBottomWrapper>
                     <div class=FSContent>

@@ -1,0 +1,44 @@
+#ArtistPageTop{
+    height: 125px;
+    border-bottom: 1px solid silver;
+}    
+
+.ArtistPageContent{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 7.5px;
+    margin-top: 20px;
+        float: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ArtistContentPicture{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+    border: 2px solid silver;
+    border-radius: 50% 50%;
+
+}
+
+.ArtistContentDescription{
+    position: relative;
+    height: 50px;
+    padding-top: 5px;
+/*    padding-left: 10px;*/
+    font-variant: small-caps;
+    font-size: 14px;
+}
+.ArtistContentName{
+/*    margin-top:5px;*/
+    text-align: center;
+    
+}
+.ArtistContentListLength{
+    
+    margin-top:2px;
+    color:grey;
+        text-align: center;
+}
