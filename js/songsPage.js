@@ -38,7 +38,8 @@ function loadSongScreen(){
                                             <td>Pray</td>\
                                             <td>2017-10-08</td>\
                                             <td>3:42</td>\
-                                       </tr>')
+                                       </tr>');
+									   
         
         
     

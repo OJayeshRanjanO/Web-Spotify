@@ -120,3 +120,78 @@
     color:red;
     cursor: pointer;
 }
+
+
+
+/*
+Added 10/31 by Limeng
+*/
+
+/*Play bar*/
+.jp-play{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	width: 35px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+.jp-seek-bar{
+    position: relative;
+    width: 80%;
+	height: 5px;
+	background-color: red;
+    bottom: 5px;
+    left:50%;
+    top:5px;
+    transform: translateX(-50%);
+}
+
+.jp-play-bar{
+	background-color: #660066;
+	height: 5px;
+}
+.jp-current-time{
+	float: left;
+	color: #fff;
+}
+.jp-duration{
+	float: right;
+	color: #fff;
+}
+
+/*Volume*/
+
+.jp-volume-bar{
+	border-style: solid;
+    border-width: 2px;
+	border-color:#3366ff;
+	width: 100px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.jp-volume-bar-value{
+	background-color:#99ccff;
+	height: 20px;
+}
+
+.jp-mute{
+	float: left;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.jp-volume-controls{
+	padding-left: 50px;
+	padding-top: 25px;
+}
